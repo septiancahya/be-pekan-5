@@ -1,12 +1,19 @@
-public class Rectangle {
+public class Rectangle extends FlatFigure {
     double width;
     double length;
 
-    public double area(){
-        return width * length;
+    @Override
+    double area(){
+        double area = width * length;
+        System.out.println("Luas:" + area);
+        return area;
     }
 
-    public double circumference(){
-        return (2 * width) + (2 * length);
+    @Override
+    double circumference(){
+        double circumference = (2 * width) + (2 * length);
+        System.out.println("Keliling:" + circumference);
+        return circumference;
     }
+
 }

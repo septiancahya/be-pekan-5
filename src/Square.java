@@ -1,12 +1,18 @@
-public class Square {
+public class Square extends FlatFigure {
     double side;
 
-    public double area(){
-        return side * side;
+    @Override
+    double area(){
+        double area = side * side;
+        System.out.println("Luas:" + area);
+        return area;
     }
 
-    public double circumference(){
-        return side * 4;
+    @Override
+    double circumference(){
+        double circumference = side * 4;
+        System.out.println("Keliling:" + circumference);
+        return circumference;
     }
 
 }

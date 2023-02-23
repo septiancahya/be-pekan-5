@@ -3,38 +3,38 @@ public class Main {
         System.out.println("Luas dan keliling masing-masing tanah yang dimiliki Pak dengklek yaitu");
         System.out.println("");
 
-        Square dengklekSquare = new Square();
-        dengklekSquare.side = 5;
+        Square persegi = new Square();
+        persegi.side = 5;
         System.out.println("PERSEGI");
-        System.out.println("Luas: "+ dengklekSquare.area());
-        System.out.println("Keliling: "+ dengklekSquare.circumference());
+        persegi.area();
+        persegi.circumference();
 
         System.out.println("");
 
-        Rectangle dengklekRectangle = new Rectangle();
-        dengklekRectangle.length = 10;
-        dengklekRectangle.width = 5;
+        Rectangle persegiPanjang = new Rectangle();
+        persegiPanjang.length = 10;
+        persegiPanjang.width = 5;
         System.out.println("PERSEGI PANJANG");
-        System.out.println("Luas: "+ dengklekRectangle.area());
-        System.out.println("Keliling: "+ dengklekRectangle.circumference());
+        persegiPanjang.area();
+        persegiPanjang.circumference();
 
         System.out.println("");
 
-        Triangle dengklekTriangle = new Triangle();
-        dengklekTriangle.base = 10;
-        dengklekTriangle.height = 7;
-        dengklekTriangle.sideA = 9;
-        dengklekTriangle.sideB = 8;
+        Triangle segitiga = new Triangle();
+        segitiga.base = 10;
+        segitiga.height = 7;
+        segitiga.sideA = 9;
+        segitiga.sideB = 8;
         System.out.println("SEGITIGA");
-        System.out.println("Luas: "+ dengklekTriangle.area());
-        System.out.println("Keliling: "+ dengklekTriangle.circumference());
+        segitiga.area();
+        segitiga.circumference();
 
         System.out.println("");
 
-        Circle denglekCircle = new Circle();
-        denglekCircle.radius = 7;
+        Circle lingkaran = new Circle();
+        lingkaran.radius = 7;
         System.out.println("LINGKARAN");
-        System.out.println("Luas: "+ denglekCircle.area());
-        System.out.println("Keliling: "+ denglekCircle.circumference());
+        lingkaran.area();
+        lingkaran.circumference();
     }
 }
