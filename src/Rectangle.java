@@ -2,6 +2,16 @@ public class Rectangle extends FlatFigure {
     double width;
     double length;
 
+    public Rectangle(double width, double length) {
+        this.width = width;
+        this.length = length;
+    }
+
+    @Override
+    void type(){
+        System.out.println("PERSEGI PANJANG");
+    }
+
     @Override
     double area(){
         double area = width * length;

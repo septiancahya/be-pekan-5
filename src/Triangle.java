@@ -4,6 +4,18 @@ public class Triangle extends FlatFigure {
     double sideA;
     double sideB;
 
+    public Triangle(double height, double base, double sideA, double sideB) {
+        this.height = height;
+        this.base = base;
+        this.sideA = sideA;
+        this.sideB = sideB;
+    }
+
+    @Override
+    void type(){
+        System.out.println("SEGITIGA");
+    }
+
     @Override
     double area(){
         double area = 0.5 * base * height;

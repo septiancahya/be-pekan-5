@@ -1,6 +1,15 @@
 public class Square extends FlatFigure {
     double side;
 
+    public Square(double side) {
+        this.side = side;
+    }
+
+    @Override
+    void type(){
+        System.out.println("PERSEGI");
+    }
+
     @Override
     double area(){
         double area = side * side;
